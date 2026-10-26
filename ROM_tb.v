@@ -29,7 +29,7 @@ initial begin
     #10 ROM_addr = 3'b110; //Expect ROM_data = 4'b1101
     #10 ROM_addr = 3'b011; //Expect ROM_data = 4'b0111
     #10 ROM_addr = 3'b101; //Expect ROM_data = 4'b0001
-    #10;
+    #10 $finish;
 end
 
 endmodule
