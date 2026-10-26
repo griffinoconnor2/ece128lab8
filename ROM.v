@@ -1,6 +1,6 @@
 module ROM (
     input [2:0] ROM_addr,
-    output [3:0] ROM_data
+    output reg [3:0] ROM_data
 );
 
 //ROM assignment
@@ -14,6 +14,7 @@ always @(ROM_addr) begin
         3'b101: ROM_data = 4'b0001;
         3'b110: ROM_data = 4'b1101;
         3'b111: ROM_data = 4'b1110;
+        default: ROM_data = 4'b0000;
     endcase
 end
 
