@@ -31,7 +31,7 @@ initial begin
     //Test Case 4: 15 * 15 = 225 (Max value multiplication)
     #100; A = 4'b1111; B = 4'b1111; //Expect product = 8'11100001
 
-    #100 $finish;
+    #200 $finish;
 
 end
 
