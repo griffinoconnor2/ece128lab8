@@ -51,13 +51,13 @@ always @(posedge clk) begin
                 operand_bb <= B;
             end
             S1_multiply: begin
-                if ((operand_bb[0] == 0 &&  shift_count < 4)) begin
+                if ((operand_bb[0] == 0 &&  shift_count < 4)) begin //if lsb of multiplier == 0, maintain partial product
                     partial_product <= partial_product;
                     shift_count <= shift_count + 1;
-                    multiplicand <= {multiplicand[6:0], 1'b0};
-                    operand_bb <= {1'b0, operand_bb[3:1]};
+                    multiplicand <= {multiplicand[6:0], 1'b0}; //left shift multiplicand to maintain correct place
+                    operand_bb <= {1'b0, operand_bb[3:1]}; //right shift multiplier to prepare conditional comaprison bit
                 end
-                else if ((operand_bb[0] == 1 &&  shift_count < 4)) begin
+                else if ((operand_bb[0] == 1 &&  shift_count < 4)) begin //if lsb of multiplier == 1, perform multiplication and update partial product
                     partial_product <= partial_product + multiplicand;
                     shift_count <= shift_count + 1;
                     multiplicand <= {multiplicand[6:0], 1'b0};
