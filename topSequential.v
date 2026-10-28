@@ -2,7 +2,7 @@ module topSequential(
     input clk, rstn,
     input [3:0] A, B,
     output wire [3:0] an,
-    output wire [6:0] cat
+    output wire [6:0] cat,
     output wire rdy
 );
 
