@@ -28,7 +28,7 @@ set_property -dict { PACKAGE_PIN V2    IOSTANDARD LVCMOS33 } [get_ports rstn]
 
 
 ## LEDs
-# set_property -dict { PACKAGE_PIN U16   IOSTANDARD LVCMOS33 } [get_ports rdy]
+set_property -dict { PACKAGE_PIN U16   IOSTANDARD LVCMOS33 } [get_ports rdy]
 # set_property -dict { PACKAGE_PIN E19   IOSTANDARD LVCMOS33 } [get_ports {A[1]}]
 # set_property -dict { PACKAGE_PIN U19   IOSTANDARD LVCMOS33 } [get_ports {A[2]}]
 # set_property -dict { PACKAGE_PIN V19   IOSTANDARD LVCMOS33 } [get_ports {A[3]}]
