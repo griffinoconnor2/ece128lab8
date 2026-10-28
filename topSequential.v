@@ -3,6 +3,7 @@ module topSequential(
     input [3:0] A, B,
     output wire [3:0] an,
     output wire [6:0] cat
+    output wire rdy
 );
 
 //Declare internal wires
