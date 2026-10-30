@@ -12,23 +12,23 @@ The sequential multiplier requires additional complex logic and clock-based cont
 
 3. Instructions for simulation and FPGA implementation
 
-Simulation: 
+  Simulation: 
 
-a. Create a project in vivavdo containing all of these files.
+    a. Create a project in vivavdo containing all of these files.
 
-b. Select the desired testbench file and corresponding design file as the top modules.
+    b. Select the desired testbench file and corresponding design file as the top modules.
 
-c. Run simulation and view waveform.
+    c. Run simulation and view waveform.
 
-FPGA implementation:
+  FPGA implementation:
 
-a. Create a project in vivavdo containing all of these files.
+    a. Create a project in vivavdo containing all of these files.
 
-b. Select the desired top module (Combinational or Sequential) as the top module.
+    b. Select the desired top module (Combinational or Sequential) as the top module.
 
-c. Generate the bitstream and connect to FPGA board.
+    c. Generate the bitstream and connect to FPGA board.
 
-d. Switches 0-3 correspond with multiplicand A, 4-7 correspond with multiplier B, and 8 corresponds with reset (active low).
+    d. Switches 0-3 correspond with multiplicand A, 4-7 correspond with multiplier B, and 8 corresponds with reset (active low).
 
 5. Additional Soures
 
